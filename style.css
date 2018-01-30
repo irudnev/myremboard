@@ -13,7 +13,7 @@ body{
   background: -ms-radial-gradient(center, ellipse cover, #9c80a3 0%,#d2b1db 80%);
   background: radial-gradient(center, ellipse cover, #9c80a3 0%,#d2b1db 80%);*/
 
-  background-image: url(images/back.jpg);
+  background-image: url(images/small_desk.jpg);
   background-size: 100% 100%;
 }
 
@@ -169,6 +169,7 @@ ul li {
   height: 2em;
   margin-top: -3.2em;
   text-align: center;
+  vertical-align: middle;
   background: transparent;
   border: 0.1em solid rgba(255,255,255,0.8);
   border-radius: 0.1em;
@@ -344,21 +345,53 @@ ul li {
 
 .key:hover{box-shadow:0px 0px 10px #4bb7f2; z-index:1000;} /* #14B524 */
 
-@media screen and (max-height: 500px){
+@media all and (max-height: 500px){
   .keyboard {
     margin: 10px 0;
   }
 }
 
-@media screen and (max-width: 1400px){
+@media all and (max-width: 1400px){
   #menu {
     width: 50%;
     left: 1em;
   }
 }
 
-@media screen and (max-width: 800px){
+@media all and (max-width: 800px){
   #menu {
     width: 80%;
+  }
+}
+
+@media handheld {
+  body {
+    font-size: 2em;
+  }
+
+  .login input {
+    margin-top: 6em;
+  }
+
+  .login input[type=password]{
+    margin-top: 0em;
+  }
+
+  .login input[type=button]{
+    margin-top: 2em;
+  }
+}
+
+@media all and (min-height: 600px) {
+  body {
+    background-image: url(images/small_portrait_desk.jpg);
+    background-size: 100% 100%;
+  }
+}
+
+@media all and (min-height: 400px) and (min-width: 800px) {
+  body {
+    background-image: url(images/desk.jpg);
+    background-size: 100% 100%;
   }
 }
