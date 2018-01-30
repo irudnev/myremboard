@@ -1,0 +1,396 @@
+<html>
+  <head>
+    <title>RemBoard</title>
+    <meta name="Описание" content="Удаленное управление компьютером с помощью клавиатуры и мыши.">
+    <link rel="icon" href="/mouse.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <input type="radio" name="point" id="slide1" checked>
+      <input type="radio" name="point" id="slide2">
+      <input type="radio" name="point" id="slide3">
+      <input type="radio" name="point" id="slide4">
+      <div class="slider">
+        <div class="slides slide1">
+          <div class="login" id="menu">
+            <input type="text" placeholder="username" name="user" id="log"><br>
+            <input type="password" placeholder="password" name="password" id="pass"><br>
+            <input type="button" value="Connect" id="btn_connect">
+          </div>
+        </div>
+        <div class="slides slide2">
+          <div class="keyboard" id="keyboard">
+            <div class="section-a">
+              <div id="ESC" class="key function space1">Esc</div>
+
+              <div id="F1" class="key function">F1</div>
+              <div id="F2" class="key function">F2</div>
+              <div id="F3" class="key function">F3</div>      
+              <div id="F4" class="key function space2">F4</div>
+              <div id="F5" class="key function">F5</div>
+              <div id="F6" class="key function">F6</div>
+              <div id="F7" class="key function">F7</div>
+              <div id="F8" class="key function space2">F8</div>
+              <div id="F9" class="key function">F9</div>
+              <div id="F10" class="key function">F10</div>
+              <div id="F11" class="key function">F11</div>
+              <div id="F12" class="key function">F12</div>
+              <!--END FUNCTION KEYS -->
+
+              <div id="BACKQUOTE" class="key num dual">~<br>`</div>
+
+              <div id="num_1" class="key num dual">!<br>1</div>
+              <div id="num_2" class="key num dual">@<br>2</div>
+              <div id="num_3" class="key num dual">#<br>3</div>
+              <div id="num_4" class="key num dual">$<br>4</div>
+              <div id="num_5" class="key num dual">%<br>5</div>
+              <div id="num_6" class="key num dual">^<br>6</div>
+              <div id="num_7" class="key num dual">&<br>7</div>
+              <div id="num_8" class="key num dual">*<br>8</div>
+              <div id="num_9" class="key num dual">(<br>9</div>
+              <div id="num_0" class="key num dual">)<br>0</div>
+              <div id="MINUS" class="key num dual dual_up">_<br><br>-</div>
+              <div id="ADD" class="key num dual">+<br>=</div>
+              <div id="BACKSPACE" class="key backspace">Backspace</div>
+              <!--END NUMBER KEYS -->
+            
+              <div id="TAB" class="key tab">Tab</div>
+              
+              <div id="Q" class="key letter">Q</div>
+              <div id="W" class="key letter">W</div>
+              <div id="E" class="key letter">E</div>
+              <div id="R" class="key letter">R</div>
+              <div id="T" class="key letter">T</div>
+              <div id="Y" class="key letter">Y</div>
+              <div id="U" class="key letter">U</div>
+              <div id="I" class="key letter">I</div>
+              <div id="O" class="key letter">O</div>
+              <div id="P" class="key letter">P</div>
+
+              <div id="OPENBRACKET" class="key dual">{<Br>[</div>
+              <div id="CLOSEBRACKET" class="key dual">}<br>]</div>
+              <div id="BACKSLASH" class="key letter dual slash">|<br>\</div>
+              <div id="CAPSLOCK" class="key caps">Caps<br>Lock</div>
+
+              <div id="A" class="key letter">A</div>
+              <div id="S" class="key letter">S</div>
+              <div id="D" class="key letter">D</div>
+              <div id="F" class="key letter">F</div>
+              <div id="G" class="key letter">G</div>
+              <div id="H" class="key letter">H</div>
+              <div id="J" class="key letter">J</div>
+              <div id="K" class="key letter">K</div>
+              <div id="L" class="key letter">L</div>
+
+              <div id="SEMICOLON" class="key dual">:<br>;</div>
+              <div id="QUOTEDBL" class="key dual">"<br>'</div>
+              <div id="ENTER" class="key enter">Enter</div>
+              
+              <div id="SHIFT" class="key shift left">Shift</div>
+              <div id="Z" class="key letter">Z</div>  
+              <div id="X" class="key letter">X</div>
+              <div id="C" class="key letter">C</div>
+              <div id="V" class="key letter">V</div>
+              <div id="B" class="key letter">B</div>
+              <div id="N" class="key letter">N</div>
+              <div id="M" class="key letter">M</div>
+              <div id="LT" class="key dual"><<br>,</div>
+              <div id="GT" class="key dual">><br>.</div>
+              <div id="QUEST" class="key dual">?<br>/</div>
+              <div id="SHIFT" class="key shift right">Shift</div>
+              <div id="CTRL" class="key ctrl">Ctrl</div>
+              <div id="FUNC" class="key extra">&#9776;</div>
+              <div id="ALT" class="key extra">Alt</div>
+              <div id="SPACE" class="key space"> </div>
+              <div id="ALT" class="key extra">Alt</div>
+              <div id="FUNC" class="key extra">&#9776;</div>
+              <div id="CONTEXT" class="key extra">Prnt</div>
+              <div id="CTRL" class="key ctrl">Ctrl</div>
+            </div><!-- end section-a-->
+        
+            <div class="section-b">
+              <div id="PRINTSCREEN" class="key function small">Prnt Scrn</div>
+              <div id="SCROLLLOCK" class="key function small">Scroll Lock</div>
+              <div id="PAUSE" class="key function small">Pause Break</div>
+              
+              <div class="sec-func">
+                <div id="INSERT" class="key">Insert</div>
+                <div id="HOME" class="key">Home</div>
+                <div id="PUP" class="key dual">Page Up</div>
+                <div id="DEL" class="key">Del</div>
+                <div id="END" class="key">End</div>
+                <div id="PDOWN" class="key dual">Page Down</div>
+                
+                <div class="arrows">
+                  <div class="key hidden"></div>
+                  <div id="UP" class="key">^</div>
+                  <div class="key hidden"></div>
+                  <div id="LEFT" class="key"><</div>
+                  <div id="DOWN" class="key">v</div>
+                  <div id="RIGHT" class="key">></div>
+                </div><!-- end arrows -->
+              </div><!-- end sec-func -->
+            </div><!-- end section-b-->
+          </div><!-- end keyboard -->
+        </div>
+        <div class="slides slide3">
+          <div id="mouse"> </div>
+        </div>
+        <div class="slides slide4">
+          <div id="note">
+            <ul id='pings'>
+              <li><h3>My notes:</h3></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="control">
+        <label for="slide1" class="label_slide1"><img src="images/connect.png"></label>
+        <label for="slide2" class="label_slide2"><img src="images/keyboard.png"></label>
+        <label for="slide3" class="label_slide3"><img src="images/mouse.png"></label>
+        <label for="slide4" class="label_slide4"><img src="images/reminder.png"></label>
+      </div>
+  </div>
+  </body>
+  <script>
+    var host = location.origin.replace(/^http/, 'ws');
+    //var ws = new WebSocket(host);
+    var ws = null;
+    var logged = false;
+
+    var con = document.getElementById("btn_connect");
+    var log = document.getElementById("log");
+    var pass = document.getElementById("pass");
+    var key = document.getElementById("keyboard");
+    var pings = document.getElementById("pings");
+    var controls = document.getElementsByClassName("control")
+    var slide1 = document.getElementById("slide1");
+    var slide2 = document.getElementById("slide2");
+    var slide3 = document.getElementById("slide3");
+    var slide4 = document.getElementById("slide4");
+
+    var menu = document.getElementById("menu");
+    var note = document.getElementById("note");
+    var mouse = document.getElementById("mouse");
+    var x_koord = 0;
+    var y_koord = 0;
+    var x_slide_koord = 0;
+    var pen = document.getElementById("pen");
+    var coffee = document.getElementById("coffee");
+
+    var mouses = document.querySelectorAll("a[href='#mouse']");
+    var keyboards = document.querySelectorAll("a[href='#keyboard']");
+
+    // window.onload = function() {
+    //   menu.style.display = "block";
+    //   note.style.display = "none";
+    //   key.style.display = "none";
+    //   mouse.style.display = "none";
+    //   pen.style.display = "none";
+    //   coffee.style.display = "none";
+    // }
+
+    con.onclick = function (event) {
+      connect();
+      slide2.checked = true;
+    }
+
+    // con.onclick = function (event) {
+    //   menu.style.display = "none";
+    //   note.style.display = "none";
+    //   key.style.display = "block";
+    //   mouse.style.display = "none";
+    //   pen.style.display = "none";
+    //   coffee.style.display = "none";
+    //   //connect();
+    // }
+
+    // mouses[0].addEventListener("click", mouse_click, false);
+    // function mouse_click(evt) {
+    //   // -moz-transform: rotate(15deg); /* Для Firefox */
+    //   // -ms-transform: rotate(15deg); /* Для IE */
+    //   // -webkit-transform: rotate(15deg); /* Для Safari, Chrome, iOS */
+    //   // -o-transform: rotate(15deg); /* Для Opera */
+    //   // transform: rotate(15deg);
+
+    //   key.style.transition = "3s linear";
+    //   key.style.MozTransform = "translate(-10000px,0)";
+    //   key.style.WebkitTransform = "translate(-10000px,0)";
+    //   key.style.OTransform = "translate(-10000px,0)";
+    //   key.style.MsTransform = "translate(-10000px,0)";
+    //   key.style.transform = "translate(-10000px,0)";
+
+    //   // menu.style.display = "none";
+    //   // note.style.display = "none";
+    //   // key.style.display = "none";
+    //   // mouse.style.display = "block";
+    //   // pen.style.display = "none";
+    //   // coffee.style.display = "none";
+    // }
+
+    // keyboards[0].addEventListener("click", keyboard_click, false);
+    // function keyboard_click(evt) {
+    //   menu.style.display = "none";
+    //   note.style.display = "none";
+    //   key.style.display = "block";
+    //   mouse.style.display = "none";
+    //   pen.style.display = "none";
+    //   coffee.style.display = "none";
+    // }
+
+    function send_log() {
+      console.log("send log");
+      if (ws) {
+        console.log(ws.readyState);
+        if (ws.readyState == 1 && log.value != "" && pass.value != "") {
+          console.log('{"pos":"0","log":"' + log.value.toLowerCase() + '","pass":"' + pass.value.toLowerCase() + '"}');
+          console.log(JSON.stringify({"pos": 0, "log": log.value.toLowerCase(), "pass": pass.value.toLowerCase()}));
+          ws.send('{"pos":"0","log":"' + log.value.toLowerCase() + '","pass":"' + pass.value.toLowerCase() + '"}');
+          logged = true;
+        } else {
+          logged = false;
+        }
+      }
+    }
+
+    function connect() {
+      console.log("connect");
+      if (ws) {
+        ws.close();
+      }
+      ws = new WebSocket(host + ':9502');
+      ws.onopen = function() {
+        //alert("Connection open");
+        send_log();
+      };
+      ws.onclose = function() {
+        logged = false;
+      }
+    }
+
+    var msg = [];
+    function send_msg(msg) {
+      console.log("msg");
+      if (ws) {
+        console.log(ws.readyState);
+        if (ws.readyState == 1 && logged == true) {
+          console.log("msg in");
+          console.log(msg);
+          var li = document.createElement('li');
+          li.innerHTML = msg;
+          // document.querySelector('#pings').appendChild(li);
+          console.log(pings.firstChild.innerHTML);
+          console.log(pings.firstChild.nextSibling.innerHTML);
+          pings.insertBefore(li, pings.firstChild.nextSibling);
+          ws.send(JSON.stringify({"msg": msg}));
+        } else {
+          // alert("Connection close");
+          slide1.checked = true;
+        }
+      } else { alert("Connection error"); }
+    }
+
+    key.onclick = function(event) {
+      msg.push(event.target.id);
+      if (event.target.id != "CTRL" && event.target.id != "ALT" && event.target.id != "SHIFT") {
+        if (log.value != "" && pass.value != "" && (logged == false || (ws && ws.readyState != 1))) {
+          console.log("to connect");
+          connect();
+          setTimeout(function() {
+            send_msg(msg);
+          }, 1000);
+        } else {
+          console.log("else to connect");
+          send_msg(msg);
+        }
+        msg = [];
+      }
+    }
+    // console.log(host);
+
+    connect();
+
+    // ws.onmessage = function (event) {
+    //   var li = document.createElement('li');
+    //   li.innerHTML = JSON.parse(event.data);
+    //   document.querySelector('#pings').appendChild(li);
+    // };
+
+    controls[0].addEventListener("touchstart", slideHandleStart, false);
+    function slideHandleStart(evt) {
+      evt.preventDefault();
+      x_slide_koord = evt.changedTouches[0].pageX;
+    }
+
+    controls[0].addEventListener("touchend", slideHandleFinish, false);
+    function slideHandleFinish(evt) {
+      evt.preventDefault();
+      if (evt.changedTouches[0].pageX - x_slide_koord > 50) {
+        previous_slide();
+      } else if (evt.changedTouches[0].pageX - x_slide_koord < -50) {
+        next_slide();
+      }
+      x_slide_koord = 0;
+    }
+
+    function next_slide() {
+      if (slide1.checked) { slide2.checked = true; }
+      else if (slide2.checked) { slide3.checked = true; }
+      else if (slide3.checked) { slide4.checked = true; }
+      else { slide1.checked = true; }
+    }
+
+    function previous_slide() {
+      if (slide2.checked) { slide1.checked = true; }
+      else if (slide3.checked) { slide2.checked = true; }
+      else if (slide4.checked) { slide3.checked = true; }
+      else { slide4.checked = true; }
+    }
+
+    mouse.addEventListener("touchstart", handleStart, false);
+    function handleStart(evt) {
+      evt.preventDefault();
+      x_koord = evt.changedTouches[0].pageX;
+      y_koord = evt.changedTouches[0].pageY;
+      touch_time = Date.now();
+    }
+
+    mouse.addEventListener("touchend", handleFinish, false);
+    function handleFinish(evt) {
+      evt.preventDefault();
+      if (x_koord > 0) {
+        if (Date.now() - touch_time > 2000 && Math.abs(evt.changedTouches[0].clientX - x_koord) < 10 && Math.abs(evt.changedTouches[0].clientY - y_koord) < 10) {
+          send_msg([0, 0, 1]);
+        } else {
+          send_msg([parseInt(evt.changedTouches[0].clientX - x_koord), parseInt(evt.changedTouches[0].clientY - y_koord)]);
+        }
+        x_koord = 0;
+        y_koord = 0;
+        touch_time = 0;
+      }
+    }
+
+    mouse.onmousedown = function(e) {
+      x_koord = e.clientX;
+      y_koord = e.clientY;
+      touch_time = Date.now();
+    }
+
+    mouse.onmouseup = function(e) {
+      if (x_koord > 0) {
+        if (Date.now() - touch_time > 2000 && Math.abs(e.clientX - x_koord) < 5 && Math.abs(e.clientY - y_koord) < 5) {
+          send_msg([0, 0, 1]);
+        } else {
+          send_msg([parseInt(e.clientX - x_koord), parseInt(e.clientY - y_koord)]);
+        }
+        x_koord = 0;
+        y_koord = 0;
+        touch_time = 0;
+      }
+    }
+
+  </script>
+</html>
