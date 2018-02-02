@@ -169,10 +169,11 @@ function slideHandleStart(evt) {
 
 controls[0].addEventListener("touchend", slideHandleFinish, false);
 function slideHandleFinish(evt) {
-  evt.preventDefault();
   if (evt.changedTouches[0].pageX - x_slide_koord > 50) {
+    evt.preventDefault();
     previous_slide();
   } else if (evt.changedTouches[0].pageX - x_slide_koord < -50) {
+    evt.preventDefault();
     next_slide();
   }
   x_slide_koord = 0;
