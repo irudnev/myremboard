@@ -163,7 +163,7 @@ connect();
 
 controls[0].addEventListener("touchstart", slideHandleStart, false);
 function slideHandleStart(evt) {
-  evt.preventDefault();
+  // evt.preventDefault();
   x_slide_koord = evt.changedTouches[0].pageX;
 }
 
